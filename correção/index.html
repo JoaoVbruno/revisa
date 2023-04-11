@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        .minha_div
+        {
+            background-color: yellow;
+            width: 200px;
+            height: 200px;
+            justify-content: center;
+            justify-items: center ;
+            align-items: center;
+            align-content: center;
+            display: flex;
+            
+        }
+
+    </style>
+
+</head>
+<body>
+
+    Clique neste botão 
+    <br>
+    <button onclick="Troca_Cor();">
+         <img src="editar.png" width="30px">
+         <br>
+         <b>Exemplo</b> <!--Deixa o texto em negrito-->
+
+    </button>
+    <br>
+    <div class="minha_div" id="minha_div">
+        Texto dentro da div
+    </div>
+
+</body>
+<script>
+    var contador = 0
+    function Troca_Cor()
+    {
+        minha_div.style.backgroundColor = "lightgreen" // Troca a cor para verde 
+        minha_div.style.borderStyle = "solid"
+        minha_div.style.borderColor = "blue"
+        contador = contador + 1
+        minha_div.innerHTML = contador // cria um contador
+        //minha_div.innerHTML += " <br> Teste" //Troca a frase (inner insere), se estiver com sinal de +, adciona mais palavras
+    }
+
+</script>
+</html>
